@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloseOut</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/copy.png" /></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="cb.html">MEMBERSHIP FACILITIES</a></li>
+                    <li><a href="sales.html">SALES</a></li>
+                    <li><a href="donation.html">DONATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="signUp.html">SIGN UP</a></li>
+                    <li id="login-btn"></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-book">
+            <h1>Sales Board</h1>
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h1>Products</h1>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/product24.jpg" />
+                <h3>Mango</h3>
+                <h4>Price: <span>100.00</span></h4>
+                <p>
+                    <b>Description: </b>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                        accusantium odit eos deserunt consequuntur iusto error eveniet
+                        inventore ex!</span>
+                </p>
+                <button class="add-to-cart-btn" onclick="addToCart('Mango', 100.00)">Add to Cart</button>
+            </div>
+            <div class="facilities-col">
+                <img src="images/product5.jpg" />
+                <h3>Broccoli</h3>
+                <h4>Price: <span>300.00</span></h4>
+                <p>
+                    <b>Description: </b>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                        accusantium odit eos deserunt consequuntur iusto error eveniet
+                        inventore ex!</span>
+                </p>
+                <button class="add-to-cart-btn" onclick="addToCart('Broccoli', 300.00)">Add to Cart</button>
+            </div>
+            <div class="facilities-col">
+                <img src="images/product6.jpg" />
+                <h3>Cabbage</h3>
+                <h4>Price: <span>200.00</span></h4>
+                <p>
+                    <b>Description: </b>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quia
+                        accusantium odit eos deserunt consequuntur iusto error eveniet
+                        inventore ex!</span>
+                </p>
+                <button class="add-to-cart-btn" onclick="addToCart('Cabbage', 200.00)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+
+        <div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </div>
+        <p>stay with us<i class="fa fa-heart-o"></i>all the time</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+
+</html>

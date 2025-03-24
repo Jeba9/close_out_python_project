@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale">
+     <title>CloseOut</title>
+     <link rel="stylesheet" href="stylesheet.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a herf="index.html"><img src="images/copy.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="cb.html">MEMBERSHIP FACILITIES</a></li>
+                        <li><a href="sales.html">SALES</a></li>
+                        <li><a href="donation.html">DONATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="signUp.html">SIGN UP</a></li>
+                        <li id="login-btn"></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+                    <h1>Member Registration</h1>
+    
+        </section>
+<!------signup content---->
+<section>
+    <div class="container">
+        <div class="sign-up-form py-4">
+            <h3>Please Enter Your Information</h3>
+            <div class="form-wrapper">
+                <form action="signup.php" method="POST">
+                    <div class="row text-left">
+                        <div class="col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input class="form-control" type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input class="form-control" type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <label for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <label for="phone">Phone</label>
+                            <input class="form-control" type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" id="password" name="password" required>
+                        </div>
+                        <div class="col-md-6 py-3">
+                            <label for="email">Confirm Password</label>
+                            <input class="form-control" type="password" id="confirmPassword" name="cconfirmPassword" required>
+                        </div>
+                        <div class="col-md-12 py-3">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" id="address" name="address" rows="4" cols="50" required></textarea>
+                        </div>
+                        <div class="submit-btn p-3 m-0 d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </div>
+                        <p>Already a member? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+                <script>
+                    function validateForm() {
+                        var firstName = document.getElementById("firstName").value;
+                        var lastName = document.getElementById("lastName").value;
+                        var email = document.getElementById("email").value;
+                        var phone = document.getElementById("phone").value;
+                        var password = document.getElementById("password").value;
+                        var confirmPassword = document.getElementById("confirmPassword").value;
+                        var address = document.getElementById("address").value;
+                        // Simple validation - you can add more complex validation if needed
+                        if (firstName.trim() === "" || lastName.trim() === "" || email.trim() === "" || 
+                            phone.trim() === "" || password.trim() === "" || confirmPassword.trim() === "" || address.trim() === "") {
+                            alert("All fields are required");
+                            return false;
+                        }
+                        
+                        if (password !== confirmPassword) {
+                            alert("Passwords do not match");
+                            return false;
+                        }
+                        return true;
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</section>
+        
+        <!---footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+
+    <div>
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+    </div>
+    <p>stay with us<i class="fa fa-heart-o"></i>all the time</p>
+        </section>
+        
+    <script src="third.js"> </script>
+    </body>
+</html>
